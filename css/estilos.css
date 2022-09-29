@@ -20,7 +20,7 @@ main img {
 }
 
 header img {
-    height: 120px;
+    width: 250px;
 }
 header {
     display: flex;
@@ -69,10 +69,13 @@ nav a:hover::after{
 }
 
 .banner-presentacion {
-    margin: 50px;
+    margin: 50px auto;
     text-align: center;
 }
 
+.banner-presentacion img {
+    width: 360px
+}
 #quienes-somos{
     margin: 0 10% 50px 10%;
 }
@@ -99,7 +102,7 @@ nav a:hover::after{
 .foto-articulo img {
     width: 400px;
     height: 300px;
-    margin: 20px;
+    margin: 20px auto;
 }
 
 
@@ -268,7 +271,7 @@ footer img {
 
 footer input {
     font-size: 12px;
-    width: 160px;
+    width: 100%;
 }
 
 .subscritor {
