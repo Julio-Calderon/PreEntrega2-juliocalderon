@@ -7,25 +7,43 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
-    <link rel="icon" href="imagenes/logo-doro-sin-fondo.png">
+    <link rel="icon" href="imagenes/icon-doro-ventana.jpg">
     <meta name="description" content="Venta al mayor de telas de punto y plano">
     <meta name="keywords" content="venta, textil, mayorista, tela, punto, plano">
     <title>Importadora de telas - Doro textil</title>
 </head>
 <body>
-    <header>
-        <div>
-            <img src="imagenes/logo-doro-sin-fondo.png " alt="logo-doro">
-        </div>
-        <nav> <!--Menu cabecera-->
-            <a href="#quienes-somos">QUIENES SOMOS</a>
-            <a href="#titulo-producto">PRODUCTOS</a>
-            <a href="#medidas">MEDIDAS</a>
-            <a href="#contacto">CONTACTO</a>
-            <a href="https://goo.gl/maps/cZV3ftEXkCiiWKYs8" target="_blank">UBICACIÓN</a>
-        </nav>
-    </header>
+    <section id="prueba-header">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <img src="imagenes/icon-doro-ventana.jpg" alt="">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#quienes-somos">QUIENES SOMOS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#titulo-producto">PRODUCTOS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#medidas">MEDIDAS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contacto">CONTACTO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://goo.gl/maps/cZV3ftEXkCiiWKYs8" target="_blank">UBICACIÒN</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </section>
     <main>
         <div class="header-bar"><!--barra de separacion--></div>
         <section class="banner-presentacion">
@@ -34,16 +52,40 @@
         <section id="quienes-somos"> <!--Descripcion de la empresa-->
             <fieldset>
                 <legend>QUIENES SOMOS</legend>
-                <p>Empresa con más de 8 años experiencia en el rubro textil, consolidandos como uno de los proveedores pilares de la zona. Nos dedicamos a la importación, fabricación y comercialización de productos textiles de alta calidad, brindando un asesoramiento integral a nuestros clientes. <br> Nuestra colección es amplia y abarca productos básicos y de moda en tejidos de punto y plano. Tanto lisos como estampados.
-                    
-                Somos apasionados e inquietos en nuestra búsqueda y es por eso que interpretamos la tendencia desde múltiples ángulos.</p>
+                <p>Empresa con más de 8 años experiencia en el rubro textil, consolidandos como uno de los proveedores pilares de la zona. <br> Nos dedicamos a la importación, fabricación y comercialización de productos textiles de alta calidad, brindando un asesoramiento integral a nuestros clientes. <br> Nuestra colección es amplia y abarca productos básicos y de moda en tejidos de punto y plano. Tanto lisos como estampados. <br> Somos apasionados e inquietos en nuestra búsqueda y es por eso que interpretamos la tendencia desde múltiples ángulos.</p>
             </fieldset>
         </section>
         <section id="art-nuevo"> <!--Agregar carrusel-->
             <h1>Articulo nuevo</h1>
-                <div>
-                    <img src="imagenes/carrusel/carrusel1.jpg " alt="modalviscosa1" width="400px"> 
+            <h2>Algodón con licra rayado</h2>
+        </section>
+        <section id="carrusel">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="imagenes/carrusel/carrusel1.jpg" class="d-block w-100" alt="imagen-carrusel1">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imagenes/carrusel/carrusel2.jpg" class="d-block w-100" alt="imagen-carrusel2">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imagenes/carrusel/carrusel3.jpg" class="d-block w-100" alt="imagen-carrusel3">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
         </section>
             <div id="titulo-producto" class="titulo-producto">
                 <h2>PRODUCTOS</h2>
@@ -124,7 +166,7 @@
             </div>
         </section>
         <section id="contacto"> <!--Contacto-->
-            <div>
+            <div class="contacto-contenido">
                 <h2>CONTACTO</h2>
                     <p>Si quieres consultar por algún producto o deseas pertenecer a nuestra empresa, envíanos un mensaje desde aquí</p>
             </div>
@@ -160,7 +202,7 @@
                 <a href="https://goo.gl/maps/cZV3ftEXkCiiWKYs8" target="_blank">UBICACIÒN</a>
             </div>
             <div class="logo-pie">
-                <img src="imagenes/logo-doro-sin-fondo.png" alt="logo-doro" width="150px"> 
+                <img src="imagenes/logo-doro-sin-fondo.png" alt="logo-doro" width="120px"> 
             </div>
             <div class="subscritor">
                 <form action="">Entérate de nuestras novedades</form>
@@ -173,6 +215,7 @@
         </div>
     </footer>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
